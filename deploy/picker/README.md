@@ -8,7 +8,7 @@
 # Deployment Lab
 
 ---
-## <img src="../../../assets/lab.png" width="auto" height="32"/> Mission
+## <img src="../../../assets/lab.png" width="auto" height="32"/> Your Mission...
 
 > Build and dockerize a word picker web application.
 
