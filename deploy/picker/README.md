@@ -12,6 +12,7 @@
 
 > Build and dockerize a word picker web service!
 
+1. Create your module file for your repository
 1. Ensure all the tests are passing!
 2. Build an executable by hand to run on your target operating system
    1. Make sure you can set the service version via your build command by leveraging build flags
