@@ -20,7 +20,8 @@ func TestLoadHandler(t *testing.T) {
 	q := url.Values{"name": []string{"musicians"}}
 	r.URL.RawQuery = q.Encode()
 
-	LoadHandler(rr, r)
+	h := New("../assets")
+	h.LoadHandler(rr, r)
 	assert.Equal(t, http.StatusOK, rr.Code)
 
 	var resp Response
@@ -38,10 +39,11 @@ func TestPickerHandler(t *testing.T) {
 	)
 
 	var err error
-	words, err = dictionary.Load("../assets", "musicians")
+	h := New("assets")
+	h.words, err = dictionary.Load("../assets", "musicians")
 	assert.Nil(t, err)
 
-	PickHandler(rr, r)
+	h.PickHandler(rr, r)
 	assert.Equal(t, http.StatusOK, rr.Code)
 
 	var resp struct {

@@ -17,9 +17,10 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o /go/bin/picker \
 
 # -----------------------------------------------------------------------------
 # Image...
-FROM alpine:3.8
+# FROM alpine:3.8
+FROM scratch
 
-RUN apk --no-cache add ca-certificates
+# RUN apk --no-cache add ca-certificates
 COPY --from=build /go/bin/picker /bin/picker
 COPY assets assets
 
