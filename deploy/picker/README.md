@@ -39,7 +39,7 @@
 
 ## Commands
 
-1 Exercise service endpoints
+1. Exercise service endpoints
 
    ```shell
    # Load a dictionary
