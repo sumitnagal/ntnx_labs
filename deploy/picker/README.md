@@ -1,4 +1,4 @@
-<img src="../../../assets/gophernand.png" align="right" width="128" height="auto"/>
+<img src="../../assets/gophernand.png" align="right" width="128" height="auto"/>
 
 <br/>
 <br/>
@@ -8,7 +8,7 @@
 # Deployment Lab
 
 ---
-## <img src="../../../assets/lab.png" width="auto" height="32"/> Your Mission...
+## <img src="../../assets/lab.png" width="auto" height="32"/> Your Mission...
 
 > Build and dockerize a word picker web application.
 
@@ -61,5 +61,5 @@
    ```
 
 ---
-<img src="../../../assets/imhotep_logo.png" width="32" height="auto"/> © 2018 Imhotep Software LLC.
+<img src="../../assets/imhotep_logo.png" width="32" height="auto"/> © 2018 Imhotep Software LLC.
 All materials licensed under [Apache v2.0](http://www.apache.org/licenses/LICENSE-2.0)
