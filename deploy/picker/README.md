@@ -10,7 +10,7 @@
 ---
 ## <img src="../../assets/lab.png" width="auto" height="32"/> Your Mission...
 
-> Build and dockerize a word picker web application.
+> Build and dockerize a word picker web service!
 
 1. Ensure all the tests are passing!
 2. Build an executable by hand to run on your target operating system
