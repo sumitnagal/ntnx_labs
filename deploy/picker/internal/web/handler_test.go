@@ -1,3 +1,4 @@
+// © 2019 Imhotep Software LLC. All rights reserved.
 package web
 
 import (

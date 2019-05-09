@@ -1,4 +1,4 @@
-// © 2018 Imhotep Software LLC. All rights reserved.
+// © 2019 Imhotep Software LLC. All rights reserved.
 
 // Package dictionary picks a random word from a dictionary loaded from
 // that can be randomly picked.

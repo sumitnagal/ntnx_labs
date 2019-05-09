@@ -1,3 +1,6 @@
+// © 2019 Imhotep Software LLC. All rights reserved.
+
+// Package web rpresents a web service.
 package web
 
 import (
