@@ -11,8 +11,6 @@
 > FizzBuzz Calculator - Implement, test and document a Fizzbuzz calculator
 > ready to be shared with the rest of the GO community. No pressure right?
 
-### Hints
-
 * In the directory documentation/fizzbuzz
   * Change the module file to reflect your own github user
   * For example: github.com/MY_GITHUB_HANDLE/fizzbuzz
