@@ -1,6 +1,6 @@
 // © 2019 Imhotep Software LLC. All rights reserved.
 
-package wc
+package grep
 
 import (
 	"index/suffixarray"

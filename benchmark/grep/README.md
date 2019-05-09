@@ -10,13 +10,13 @@
 ## <img src="../../assets/lab.png" width="auto" height="32"/> Mission
 
 
-> Implement grep! Your CLI application should take a work and a file name and
+> Implement Grep+Wc! Your CLI application should take a word and a file name and
 > report back the number of occurrences.
 
 * Implement and test a `WordCount` function that computes a given word occurence count.
 * Benchmark your count function.
 * Using `benchstat` checkout to variation and make sure you have a solid measurement.
-* How can you speed up your initial implementation?
+* Can you speed up your initial implementation?
 * Implement and test a second implementation.
 * Using `benchstat` compare your first and second implementations.
 * BONUS! Can you think of a more performant way to implement the count? How does your solution compares to using unix grep?
@@ -31,7 +31,7 @@ $ cd $HOME/gopherland
 # Clone Labs Repo if not done already
 $ git clone https://github.com/gopherland/ntnx_labs.git
 # Lab dir
-cd wc
+cd benchmark/grep
 # Get cracking!!
 ```
 

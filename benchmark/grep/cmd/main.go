@@ -9,7 +9,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/gopherland/level2/labs/wc"
+	"github.com/gopherland/level2/labs/grep"
 )
 
 func main() {
@@ -29,7 +29,7 @@ func main() {
 	// rx := regexp.MustCompile("(?i)" + word)
 	for scanner.Scan() {
 		// count += wc.Count(rx, scanner.Text())
-		count += wc.Count(word, scanner.Text())
+		count += grep.Count(word, scanner.Text())
 	}
 
 	if err := scanner.Err(); err != nil {

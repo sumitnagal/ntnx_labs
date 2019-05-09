@@ -1,4 +1,4 @@
-module github.com/gopherland/level2/labs/wc
+module github.com/gopherland/level2/labs/grep
 
 go 1.12
 

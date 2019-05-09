@@ -1,10 +1,12 @@
-package wc_test
+// © 2019 Imhotep Software LLC. All rights reserved.
+
+package grep_test
 
 import (
 	"regexp"
 	"testing"
 
-	"github.com/gopherland/level2/labs/wc"
+	"github.com/gopherland/level2/labs/grep"
 	"gotest.tools/assert"
 )
 
@@ -32,7 +34,7 @@ func TestWc(t *testing.T) {
 
 	for k, u := range uu {
 		t.Run(k, func(t *testing.T) {
-			assert.Equal(t, u.count, wc.Count(u.word, u.line))
+			assert.Equal(t, u.count, grep.Count(u.word, u.line))
 		})
 	}
 }
@@ -62,7 +64,7 @@ func TestWc1(t *testing.T) {
 	for k, u := range uu {
 		t.Run(k, func(t *testing.T) {
 			rx := regexp.MustCompile("(?i)" + u.word)
-			assert.Equal(t, u.count, wc.Count1(rx, u.line))
+			assert.Equal(t, u.count, grep.Count1(rx, u.line))
 		})
 	}
 }
@@ -92,7 +94,7 @@ func TestWc2(t *testing.T) {
 	for k, u := range uu {
 		t.Run(k, func(t *testing.T) {
 			rx := regexp.MustCompile("(?i)" + u.word)
-			assert.Equal(t, u.count, wc.Count2(rx, u.line))
+			assert.Equal(t, u.count, grep.Count2(rx, u.line))
 		})
 	}
 }
@@ -102,7 +104,7 @@ func BenchmarkCount1(b *testing.B) {
 	b.ResetTimer()
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		wc.Count(w, line)
+		grep.Count(w, line)
 	}
 }
 
@@ -112,7 +114,7 @@ func BenchmarkCount2(b *testing.B) {
 	b.ResetTimer()
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		wc.Count1(rx, line)
+		grep.Count1(rx, line)
 	}
 }
 
@@ -122,6 +124,6 @@ func BenchmarkCount3(b *testing.B) {
 	b.ResetTimer()
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		wc.Count2(rx, line)
+		grep.Count2(rx, line)
 	}
 }
