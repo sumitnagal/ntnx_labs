@@ -1,4 +1,4 @@
-// © 2018 Imhotep Software LLC. All rights reserved.
+// © 2019 Imhotep Software LLC. All rights reserved.
 package dictionary_test
 
 import (
