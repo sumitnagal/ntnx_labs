@@ -8,7 +8,7 @@ SVC_IMG_NAME := ${SVC_IMAGE}:${SVC_VERSION}
 
 default: help
 
-osx:  ## Build local picker
+build:  ## Build local picker
 	@go build -v -o execs/picker \
   -ldflags="-w -s -X main.version=${SVC_VERSION}" ${SVC_PACKAGE}/cmd
 

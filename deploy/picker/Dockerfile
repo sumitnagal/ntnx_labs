@@ -1,11 +1,9 @@
 # -----------------------------------------------------------------------------
 # Stage...
-FROM golang:1.12.1-alpine AS build
+FROM golang:1.12.5-alpine AS build
 WORKDIR /go/src/github.com/gopherland/ntnx_labs/deploy/picker
 
 ENV VERSION=0.0.2 GO111MODULE=on
-
-# RUN apk --no-cache add git
 
 COPY go.mod go.sum main.go ./
 COPY internal internal
