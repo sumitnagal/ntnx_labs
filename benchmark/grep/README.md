@@ -4,7 +4,7 @@
 <br/>
 <br/>
 
-# CLI Flags Lab
+# Testing and Benchmarking Lab
 
 ---
 ## <img src="../../assets/lab.png" width="auto" height="32"/> Mission
