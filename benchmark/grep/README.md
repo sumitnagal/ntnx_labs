@@ -11,7 +11,7 @@
 
 
 > Implement Grep+Wc! Your CLI application should take a word and a file name and
-> report back the number of occurrences.
+> report back the number of occurrences of the word in the file.
 
 * Implement and test a `WordCount` function that computes a given word occurence count.
 * Benchmark your count function.
