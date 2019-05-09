@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 # Stage...
-FROM golang:1.12.1-alpine AS build
+FROM golang:1.12.5-alpine AS build
 
 <!!CHANGE_ME!!>
 
