@@ -30,7 +30,7 @@ func Compute(n int) string {
 		return Fizz
 	case n%5 == 0:
 		return Buzz
-	default:
-		return strconv.Itoa(n)
 	}
+
+	return strconv.Itoa(n)
 }

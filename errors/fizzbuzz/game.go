@@ -9,15 +9,25 @@ import (
 	"github.com/pkg/errors"
 )
 
+// GameErr represents a fizzbuzz game error.
+type GameErr string
+
+func (e GameErr) Error() string {
+	return string(e)
+}
+
 const (
-	div3     = "Fizz"
-	div5     = "Buzz"
-	div3And5 = div3 + div5
+	// Fizz number divisible by 3
+	Fizz = "Fizz"
+	// Buzz number divisible by 5
+	Buzz = "Buzz"
+	// FizzBuzz divisible by 3 and 5
+	FizzBuzz = Fizz + Buzz
 )
 
-var (
-	errUnderRange = errors.New("number is under range (<=0)")
-	errOverRange  = errors.New("number is over range (> 20)")
+const (
+	errUnderRange = GameErr("number is under range (<=0)")
+	errOverRange  = GameErr("number is over range (> 20)")
 )
 
 func main() {
@@ -33,25 +43,23 @@ func main() {
 
 func play(n int) (string, error) {
 	var s string
-
 	if n <= 0 {
 		return s, errors.Wrapf(errUnderRange, "FizzBuzz with %d", n)
 	}
-
 	if n > 20 {
 		return s, errors.Wrapf(errOverRange, "FizzBuzz with %d", n)
 	}
 
 	switch {
 	case n%3 == 0 && n%5 == 0:
-		s = div3And5
+		s = FizzBuzz
 	case n%3 == 0:
-		s = div3
+		s = Fizz
 	case n%5 == 0:
-		s = div5
+		s = Buzz
 	default:
 		s = strconv.Itoa(n)
 	}
 
-	return s, nil
+	return strconv.Itoa(n), nil
 }
