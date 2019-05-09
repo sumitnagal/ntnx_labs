@@ -59,7 +59,7 @@
 1. Run a Docker image exposing 4500 locally
 
    ```shell
-   docker run -it -p 4500:4500 picker:0.0.1
+   docker run -it -p 4500:4500 picker:0.0.1 -d # turns on debug logger
    ```
 
 1. List your Docker image

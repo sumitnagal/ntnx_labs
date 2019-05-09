@@ -16,7 +16,7 @@ img:  ## Build Picker Svc Docker Image
 	@docker build --rm -t ${SVC_IMG_NAME} .
 
 run:  ## Run dockerized Picker
-	@docker run -it -p 4500:4500 ${SVC_IMG_NAME}
+	@docker run -it -p 4500:4500 ${SVC_IMG_NAME} -d
 
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[38;5;69m%-30s\033[38;5;168m %s\n", $$1, $$2}'

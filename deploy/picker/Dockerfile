@@ -7,13 +7,13 @@ ENV VERSION=0.0.2 GO111MODULE=on
 
 # RUN apk --no-cache add git
 
-COPY go.mod go.sum ./
-COPY cmd cmd
+COPY go.mod go.sum main.go ./
 COPY internal internal
+
 
 RUN apk --no-cache add git ;\
   CGO_ENABLED=0 GOOS=linux go build -o /go/bin/picker \
-  -ldflags="-w -s -X main.version=$VERSION" github.com/gopherland/ntnx_labs/deploy/picker/cmd
+  -ldflags="-w -s -X main.version=$VERSION" github.com/gopherland/ntnx_labs/deploy/picker
 
 
 # -----------------------------------------------------------------------------

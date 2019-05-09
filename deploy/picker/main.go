@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"net/http"
 	"os"
 	"time"
@@ -17,7 +18,8 @@ const httpPort = ":4500"
 
 var (
 	// Version set via build
-	version = "dev"
+	version  = "dev"
+	logDebug bool
 )
 
 func init() {
@@ -25,6 +27,14 @@ func init() {
 }
 
 func main() {
+	flag.BoolVar(&logDebug, "d", logDebug, "Turn off debugging logs")
+	flag.Parse()
+
+	zerolog.SetGlobalLevel(zerolog.InfoLevel)
+	if logDebug {
+		zerolog.SetGlobalLevel(zerolog.DebugLevel)
+	}
+
 	h := web.New("assets")
 
 	c := setupMiddleware()
@@ -40,7 +50,7 @@ func setupMiddleware() alice.Chain {
 	c := alice.New()
 	c = c.Append(hlog.NewHandler(log.Logger))
 	c = c.Append(hlog.AccessHandler(func(r *http.Request, status, size int, duration time.Duration) {
-		hlog.FromRequest(r).Info().
+		hlog.FromRequest(r).Debug().
 			Str("method", r.Method).
 			Str("url", r.URL.String()).
 			Int("status", status).
