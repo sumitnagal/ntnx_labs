@@ -4,10 +4,10 @@
 <br/>
 <br/>
 
-# Nutanix Labs!
+# GopherLand Labs!
 
 
-This repository contains lab solutions for the GopherLand class materials.
+This repository contains lab solutions from the GopherLand class materials.
 
 
 ---

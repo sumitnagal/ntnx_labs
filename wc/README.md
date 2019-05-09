@@ -8,7 +8,7 @@
 # Package Lab
 
 ---
-## <img src="assets/lab.png" width="auto" height="32"/> Mission
+## <img src="../assets/lab.png" width="auto" height="32"/> Mission
 
 > Package a web application to count words.
 
