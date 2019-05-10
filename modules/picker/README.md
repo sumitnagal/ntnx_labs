@@ -15,7 +15,13 @@
 
 > Package deal! Implement a picker package to pick a word from a given word dictionary
 
-* The picker package loads words from the given assets directory and randomly pick a new word
+* In this lab, you are going to leverage an existing implementation and deploy it as a go module.
+* The picker package loads words from the given assets directory and randomly pick a new word.
+* The application contains both lib code and a binary.
+* You will need to use your own github account to publish your package
+
+### Commands
+
 * In your lab repo navigate to gopherland/labs/modules/picker
 * Create a new module file using the following command:
   ```shell
@@ -23,7 +29,7 @@
   ```
 * Run the test command to make sure the tests are still passing and coverage is good!
 * Run the main application and ensure it's working correctly
-* Ensure all exported items have documentation
+* Ensure all exported items have documentation and code coverage is adequate
 * Using your own github account, create a new public repo named **picker**
 * Setup your git repo using:
   ```shell
@@ -33,11 +39,6 @@
   git remote add origin git@github.com:YOUR_GIT_USER_HANDLE/picker.git
   git push --set-upstream origin master
   ```
-* Using semantic versioning tag your release
-  ```shell
-  git tags v1.0.0
-  git push --tags
-  ```
 * In cmd/main.go update the import path to use your new repo
 * In the root of your repo run your cli app
   ```shell
@@ -46,6 +47,11 @@
   # Clean up your dependencies
   go mod tidy
   ```
+* Using semantic versioning tag your release
+  ```shell
+  git tags v1.0.0
+  git push --tags
+  ```
 * Checkout your docs and score card!
   ```shell
   open https://godoc.org/github.com/YOUR_GIT_USER_HANDLE/picker
@@ -53,7 +59,8 @@
   ```
 * Update the README.md badge section with your own github handle
 * Congratulation! You've just built and published your very own go package!
-*
+
+* [BONUS]: Download and use, your classmate packages
 * [BONUS] Use [Travis CI](https://travis-ci.org), add your repo and earn an extra badge!
 
 ---
