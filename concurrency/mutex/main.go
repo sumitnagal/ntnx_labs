@@ -99,7 +99,7 @@ func countWord(bc bookCounts, book, word string, wg *sync.WaitGroup, mx *sync.Mu
 	})
 }
 
-// Count1 returns the number of occurrence of a word in a line.
+// GrepCount returns the number of occurrence of a word in a line.
 func grepCount(rx *regexp.Regexp, line string) int {
 	m := rx.FindAllStringIndex(line, -1)
 	return len(m)
@@ -108,7 +108,7 @@ func grepCount(rx *regexp.Regexp, line string) int {
 // BooksURL book repo url.
 const booksURL = "http://www.textfiles.com/stories/"
 
-// Fetch books from a book repo.
+// Fetch a book from a book repo.
 func fetch(link string) ([]byte, error) {
 	var res []byte
 	resp, err := http.Get(link)
