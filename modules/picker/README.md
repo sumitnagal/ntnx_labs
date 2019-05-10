@@ -13,7 +13,7 @@
 ---
 ## <img src="../../assets/lab.png" width="auto" height="32"/> Mission
 
-> Package deal! Implement a picker package to pick a word from a given word dictionary
+> Package deal! Modulerize and publish a picker package to pick a word from a given word dictionary
 
 * In this lab, you are going to leverage an existing implementation and deploy it as a go module.
 * The picker package loads words from the given assets directory and randomly pick a new word.
