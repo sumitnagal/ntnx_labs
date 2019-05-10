@@ -10,7 +10,7 @@ default: help
 
 build:  ## Build local picker
 	@go build -v -o execs/picker \
-  -ldflags="-w -s -X main.version=${SVC_VERSION}" ${SVC_PACKAGE}/cmd
+  -ldflags="-w -s -X main.version=${SVC_VERSION}" main.go
 
 img:  ## Build Picker Svc Docker Image
 	@docker build --rm -t ${SVC_IMG_NAME} .
