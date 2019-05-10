@@ -1,5 +1,5 @@
 language: go
-go_import_path: github.com/gopherland/labs/picker
+go_import_path: github.com/derailed/picker
 go:
   - 1.12
   - master
