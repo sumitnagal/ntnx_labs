@@ -11,7 +11,8 @@
 
 > Implement a Fibonacci number web service that produces the first n Fibonacci numbers given n as input.
 
-+ `fib(n) = 0 n=0,1`
++ `fib(0) = 0`
++ `fib(1) = 0`
 + `fib(n) = fib(n-2)+fib(n-1)`
 
 <br/>
