@@ -14,6 +14,8 @@
 + `fib(n) = 0 n=0,1`
 + `fib(n) = fib(n-2)+fib(n-1)`
 
+<br/>
+
 + The webservice and a initial implementation has been provides.
 + Using profiling technics, establish the service performance profile and baseline.
   + Record initial numbers gathered via hey or apache bench
