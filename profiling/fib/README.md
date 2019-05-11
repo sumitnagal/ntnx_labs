@@ -12,7 +12,7 @@
 > Implement a Fibonacci number web service that produces the first n Fibonacci numbers given n as input.
 
 + `fib(0) = 0`
-+ `fib(1) = 0`
++ `fib(1) = 1`
 + `fib(n) = fib(n-2)+fib(n-1)`
 
 <br/>
@@ -20,7 +20,8 @@
 + The webservice and a initial implementation has been provides.
 + Using profiling technics, establish the service performance profile and baseline.
   + Record initial numbers gathered via hey or apache bench
-  + Establish if the service CPU/Mem or IO bound?
+  + Is this service CPU/Mem or IO bound?
++ Leverage MicroBenchmarks to assert your profiling experimentation and improvements.
 + What do you notice and what can you improve?
 + Tune the implementation and repeat the profiling process to produce the best possible results.
 

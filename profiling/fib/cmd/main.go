@@ -40,14 +40,6 @@ func fibHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// res := make(results, 0, n)
-	// for i := 0; i <= n; i++ {
-	// 	res = append(res, result{
-	// 		Number:    i,
-	// 		Fibonacci: fib.ComputeRec(i),
-	// 	})
-	// }
-
 	res := make(results, 0, n)
 	for i := 0; i <= n; i++ {
 		res = append(res, result{
