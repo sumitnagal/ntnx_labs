@@ -9,7 +9,9 @@
 ---
 ## <img src="../../assets/lab.png" width="auto" height="32"/> Mission
 
-> Implement a Fibonacci number web service that produces the n fib numbers given n as input.
+> Implement a Fibonacci number web service that produces the first n Fibonacci numbers given n as input.
+
+`fib(n) = 0 n=0,1` and `fib(n) = fib(n-2)+fib(n-1)`
 
 + The webservice and a initial implementation has been provides.
 + Using profiling technics, establish the service performance profile and baseline.
